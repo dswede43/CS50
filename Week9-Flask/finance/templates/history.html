@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Type</th>
+                <th class="text-start">Symbol</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price (USD)</th>
+                <th class="text-end">Total Price (USD)</th>
+                <th class="text-end">Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in user_transactions %}
+            <tr>
+                <td class="text-start">{{ row["type"] }}</td>
+                <td class="text-start">{{ row["symbol"] }}</td>
+                <td class="text-end">{{ row["shares"] }}</td>
+                <td class="text-end">{{ usd(row["price"]) }}</td>
+                <td class="text-end">{{ usd((-1)*row["shares"]*row["price"]) }}</td>
+                <td class="text-end">{{ row["timestamp"] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
