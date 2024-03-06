@@ -1,3 +1,12 @@
+#DNA
+#---
+#Short Tandem Repeats (STRs) are short sequences of DNA bases that repeat consecutively numerous times
+#at specific locations within a person’s genome. The number of times a particular STR repeats varies
+#between individuals. This variability can be used to accurately DNA profile a person for forensic purposes.
+
+#This script matches a DNA sequence to a person’s genome given that persons STR repeats. This requires two inputs:
+#(1) .txt file containing a DNA sequence and (2) .csv file containing the number of STR repeats for various people.
+
 import csv
 import sys
 
