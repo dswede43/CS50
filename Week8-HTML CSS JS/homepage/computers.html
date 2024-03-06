@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="darkmode.js"></script>
+        <title>Dan Statz</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>
+                <u><b><a href="home.html" style="color: #f44336">DAN STRATZ</a></b></u>
+            </h1>
+        </div>
+        <hr style="height:6px">
+        <div class="menu-bar">
+            <ul>
+                <li class="active"><a href="home.html"><u>Home</u></a></li>
+                <li><a href="research.html"><u>Research</u></a></li>
+                <li><a href="#"><u>Hobbies</u></a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="computers.html"><u>Computers</u></a></li>
+                            <li><a href="hockey.html"><u>Hockey</u></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <button onclick="myFunction()" id="dark-button" style="border:none;">Dark mode</button>
+        </div>
+        <hr style="height:6px">
+        <div class="page-content">
+            <h1><b>Computers</b></h1>
+            <img class="feature-image" src="images/PC.JPG" alt="PC">
+            <h2><b>Server</b></h2>
+            <p>
+                Built my own private home server running Unraid OS. In fact, my <a href="https://dan.stratz.me">Wordpress website</a> is hosted on my server via a docker container with MariaDB running mySQL for my database.
+            </p>
+            <p>
+                Hardware specifications:
+            </p>
+            <ul>
+                <li>Intel Core i5-6400 CPU</li>
+                <li>16GB DDR4 RAM</li>
+                <li>NVIDIA GTX 1060 6GB GPU</li>
+                <li>500GB SATA SSD Cache pool (in parity)</li>
+                <li>4TB HDD array (in parity)</li>
+            </ul>
+            <figure>
+                <img class="blog-image" src="images/Server.jpg" alt="My server">
+                <figcaption>Home-built server</figcaption>
+            </figure>
+            <h2><b>PC Gaming</b></h2>
+            <p>
+                Built my own desktop computer running Windows 10 for my gaming needs. RDR2 is my favorite game 🙂
+            </p>
+            <p>
+                Hardware specifications:
+            </p>
+            <ul>
+                <li>Intel Core i7-10700K CPU (overclocked to 4.90 GHz)</li>
+                <li>16GB DDR4 RAM (3.2 GHz)</li>
+                <li>NVIDIA RTX 3070 8GB GPU (overclocked to 2.0 GHz)</li>
+            </ul>
+            <figure>
+                <img class="blog-image" src="images/Gaming_PC.jpg" alt="My gaming setup">
+                <figcaption>Gaming setup</figcaption>
+            </figure>
+            <h2><b>Home Network</b></h2>
+            <p>
+                Built my own network router running PfSense for better internet and more control over my own network.
+            </p>
+            <p>
+                Hardware specifications:
+            </p>
+            <ul>
+                <li>Intel Xeon E3-1220L V3 CPU</li>
+                <li>4GB DDR3 RAM</li>
+            </ul>
+            <figure>
+                <img class="blog-image" src="images/Router.JPG" alt="My home network">
+                <figcaption>Home network setup</figcaption>
+            </figure>
+        </div>
+        <footer>
+        </footer>
+    </body>
+</html>
